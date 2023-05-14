@@ -1,0 +1,1 @@
+python3 -u decode_local.py --recover_path $checkpoint_path
