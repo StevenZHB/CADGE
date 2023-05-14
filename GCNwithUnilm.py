@@ -1,10 +1,3 @@
-import torch
-import torch.nn as nn
-import torch.nn.functional as F
-import copy
-import math
-import dgl
-
 import sys
 
 sys.path.append(".")
@@ -21,8 +14,7 @@ import sys
 import pickle
 sys.path.append(".")
 
-from transformers.models.bert.modeling_bert import load_tf_weights_in_bert, BertPooler, BertIntermediate, BertOutput, \
-    BertPredictionHeadTransform, BertSelfOutput, BertLMPredictionHead, BertOnlyMLMHead, BertOnlyNSPHead
+from transformers.models.bert.modeling_bert import BertOnlyMLMHead
 from modeling_unilm import LabelSmoothingLoss, BertEncoder, UnilmPreTrainedModel, UnilmModel, UnilmModelIncr, \
     BertDecoder, UnilmConfig
 from graph_attention import GATlayer
